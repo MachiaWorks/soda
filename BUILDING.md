@@ -38,5 +38,9 @@ If an include or library cannot be loaded during the build,
 look at the message that is displayed and check whether the library 
 or include file exists in the folder associated with the executable file.
 
+### usage
+Place SDL2.dll, SDL2_image.dll, and SDL2_mixer.dll in the same folder as the executable file and launch either soda_x86.exe or soda_x64.exe.
+
+### warning. 
 That should do it _if_ the SDL paths are all sorted out.  
 Which they probably aren't.  This is a work in progress.
