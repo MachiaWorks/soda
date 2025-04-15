@@ -27,6 +27,8 @@ Soda is a command-line program written in C++ and using SDL.  On most systems th
 This procedure depends on the environment of the person building it, so I can't go into detail.
 However, here are some hints:
 If you store the SDL files in the storage location for include files and library files associated with the environment variable "VCToolsInstallDir", they will be recognized.
+Alternatively, you may want to store your include and library files in "soda/src".
+In either case, the include files should be placed in the SDL2 folder.
 3. Launch **DeveloperCommandPrompt for VC 20xx**
 4. command `cd soda` to change to the _soda_ subdirectory (next to this document).
 5. command `build_win.bat`
@@ -38,9 +40,9 @@ If an include or library cannot be loaded during the build,
 look at the message that is displayed and check whether the library 
 or include file exists in the folder associated with the executable file.
 
-### usage
+### Launch Soda
 Place SDL2.dll, SDL2_image.dll, and SDL2_mixer.dll in the same folder as the executable file and launch either soda_x86.exe or soda_x64.exe.
 
-### warning. 
+### Warning. 
 That should do it _if_ the SDL paths are all sorted out.  
 Which they probably aren't.  This is a work in progress.
